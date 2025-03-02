@@ -35,6 +35,7 @@ function updateVal() {
             console.log(Grid1)
             event.currentTarget.textContent = "X"
             if (checkwin(Grid1)) {
+                ref()
                 alert(`${name_list[0]} won`)
             }
         } else {
@@ -43,6 +44,7 @@ function updateVal() {
             console.log(Grid2)
             event.currentTarget.textContent = "O"
             if (checkwin(Grid2)) {
+                ref()
                 alert(`${name_list[1]} won`)
             }
         }
