@@ -34,6 +34,7 @@ function updateVal() {
             event.currentTarget.textContent = "X"
             if (checkwin(Grid1)) {
                 ref()
+                player++
                 alert(`player 1 won`)
             }
         } else {
@@ -43,6 +44,7 @@ function updateVal() {
             event.currentTarget.textContent = "O"
             if (checkwin(Grid2)) {
                 ref()
+                player++
                 alert(`player 2 won`)
             }
         }
