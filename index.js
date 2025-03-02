@@ -34,7 +34,7 @@ function updateVal() {
             event.currentTarget.textContent = "X"
             if (checkwin(Grid1)) {
                 ref()
-                alert(`${name_list[0]} won`)
+                alert(`player 1 won`)
             }
         } else {
             index = event.currentTarget.id
@@ -43,7 +43,7 @@ function updateVal() {
             event.currentTarget.textContent = "O"
             if (checkwin(Grid2)) {
                 ref()
-                alert(`${name_list[1]} won`)
+                alert(`player 2 won`)
             }
         }
         player++}
