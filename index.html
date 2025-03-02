@@ -2,15 +2,6 @@
 <html lang="en">
 <head>
     <title>Tic-Tac-Toe game</title>
-    <style>
-        button {
-            border-radius: 5px;
-            width: 100px;
-            height: 40px;
-            margin: 1px;
-    
-        }
-    </style>
     <link rel="stylesheet" href="style.css"> 
 </head>
 
@@ -18,24 +9,27 @@
     <h3>Tic-Tac-Toe game</h3>
     <h2>player 1 symbol = X</h2>
     <h2>player 2 symbol = O</h2>
+    <div class="player-box">
     <input id="name1" type="text" placeholder="Player 1 name" />
     <button id="Name1" onclick="submit(name1.value)">submit</button>
-    <h1></h1>
+    </div>
+    <div class="player-box">
     <input id="name2" type="text" placeholder="Player 2 name" />
     <button id="Name2" onclick="submit(name2.value)">submit</button>
-    <h1></h1>
-    <button id="00" onclick = "updateVal()">____</button>
-    <button id="01" onclick = "updateVal()">____</button>
-    <button id="02" onclick = "updateVal()">____</button>
-    <h3></h3>
-    <button id ="10" onclick = "updateVal()">____</button>
-    <button id ="11" onclick = "updateVal()">____</button>
-    <button id ="12" onclick = "updateVal()">____</button>
-    <h3></h3>
-    <button id ="20" onclick = "updateVal()">____</button>
-    <button id ="21" onclick = "updateVal()">____</button>
-    <button id ="22" onclick = "updateVal()">____</button>
-    <h3></h3>
+    </div>
+    <h4></h4>
+    <button id="00" class="pos1" onclick = "updateVal()">____</button>
+    <button id="01" class="pos2" onclick = "updateVal()">____</button>
+    <button id="02" class="pos3" onclick = "updateVal()">____</button>
+    <h4></h4>
+    <button id ="10" class="pos1" onclick = "updateVal()">____</button>
+    <button id ="11" class="pos2" onclick = "updateVal()">____</button>
+    <button id ="12" class="pos3" onclick = "updateVal()">____</button>
+    <h4></h4>
+    <button id ="20" class="pos1" onclick = "updateVal()">____</button>
+    <button id ="21" class="pos2" onclick = "updateVal()">____</button>
+    <button id ="22" class="pos3" onclick = "updateVal()">____</button>
+    <h4></h4>
     <div class="refresh_button">
         <button id = "refresh" onclick="ref() ">Reset Game</button>
     </div>
