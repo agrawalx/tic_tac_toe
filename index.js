@@ -17,8 +17,6 @@ function submit(name) {
         alert("no name given")
     } else {
     name_list.push(name)
-    alert(  `hello ${name}`)
-    console.log(name_list)
     }
 }
 
