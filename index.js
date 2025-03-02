@@ -88,8 +88,10 @@ function ref() {
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
             document.getElementById(`${i}${j}`).textContent = "____";
+    
         }
     }
+    player = 0 
 }
 
 

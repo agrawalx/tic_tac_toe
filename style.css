@@ -4,7 +4,8 @@
     height: 100px;
     font-size: 24px;
     position:relative;
-    left:720px;
+    left:950px;
+    bottom:447px
 }
 
 .refresh_button button:hover {
@@ -20,7 +21,7 @@ h4 {
 }
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
+    font-size: 40px;
     color:white
 }
 #Name1{
@@ -47,6 +48,7 @@ h2 {
     margin: 1px;
     position: relative;
     left: 605px;
+    bottom:200px;
     
 }
 
@@ -57,6 +59,7 @@ h2 {
     margin: 1px;
     position: relative;
     left: 610px;
+    bottom:200px;
 }
 
 .pos3  {
@@ -66,6 +69,7 @@ h2 {
     margin: 1px;
     position: relative;
     left: 615px;
+    bottom:200px;
 }
 body {
     background-color: black;
@@ -73,10 +77,9 @@ body {
 
 .player-box {
     border: 2px solid black;
-    padding: 15px;
+    height: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
+    
 }
