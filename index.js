@@ -26,25 +26,27 @@ function updateVal() {
     //index = event.currentTarget.id 
     //myGrid[index[0]][index[1]] = 0
     //console.log(myGrid)
-    index = event.currentTarget.id
-    if (player % 2 == 0) {
-        index = event.currentTarget.id
-        Grid1[index[0]][index[1]] = 0
-        console.log(Grid1)
-        event.currentTarget.textContent = "X"
-        if (checkwin(Grid1)) {
-            alert(`${name_list[0]} won`)
+    if (event.currentTarget.textContent != "____") {
+        alert(`cant override the move`)
+    } else {index = event.currentTarget.id
+        if (player % 2 == 0) {
+            index = event.currentTarget.id
+            Grid1[index[0]][index[1]] = 0
+            console.log(Grid1)
+            event.currentTarget.textContent = "X"
+            if (checkwin(Grid1)) {
+                alert(`${name_list[0]} won`)
+            }
+        } else {
+            index = event.currentTarget.id
+            Grid2[index[0]][index[1]] = 0
+            console.log(Grid2)
+            event.currentTarget.textContent = "O"
+            if (checkwin(Grid2)) {
+                alert(`${name_list[1]} won`)
+            }
         }
-    } else {
-        index = event.currentTarget.id
-        Grid2[index[0]][index[1]] = 0
-        console.log(Grid2)
-        event.currentTarget.textContent = "O"
-        if (checkwin(Grid2)) {
-            alert(`${name_list[1]} won`)
-        }
-    }
-    player++
+        player++}
 }
 
 function checkwin(grid) {
