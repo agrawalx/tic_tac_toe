@@ -1,10 +1,17 @@
 
 let name_list = []
-let myGrid = [
+let Grid1 = [
     [1, 1, 1],
     [1, 1, 1],
     [1, 1, 1]
 ];
+let Grid2 = [
+    [1, 1, 1],
+    [1, 1, 1],
+    [1, 1, 1]
+];
+
+let player = 0 
 function submit(name) {
     if (name=='') {
         alert("no name given")
@@ -16,12 +23,28 @@ function submit(name) {
 }
 
 function updateVal() {
-    index = event.currentTarget.id 
-    myGrid[index[0]][index[1]] = 0
-    console.log(myGrid)
-    if (checkwin(myGrid)) {
-        alert("player won")
+    //index = event.currentTarget.id 
+    //myGrid[index[0]][index[1]] = 0
+    //console.log(myGrid)
+    index = event.currentTarget.id
+    if (player % 2 == 0) {
+        index = event.currentTarget.id
+        Grid1[index[0]][index[1]] = 0
+        console.log(Grid1)
+        event.currentTarget.textContent = "X"
+        if (checkwin(Grid1)) {
+            alert(`${name_list[0]} won`)
+        }
+    } else {
+        index = event.currentTarget.id
+        Grid2[index[0]][index[1]] = 0
+        console.log(Grid2)
+        event.currentTarget.textContent = "O"
+        if (checkwin(Grid2)) {
+            alert(`${name_list[1]} won`)
+        }
     }
+    player++
 }
 
 function checkwin(grid) {
