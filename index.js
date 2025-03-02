@@ -70,8 +70,28 @@ function checkwin(grid) {
     if (tr1.every( val => val == 0) || tr2.every( val => val == 0)) {
         return true
     }
-
-
 }
+function ref() {
+    console.log("Refresh function called");
+    Grid1 = [
+        [1, 1, 1],
+        [1, 1, 1],
+        [1, 1, 1]
+    ]
+    Grid2 = [
+        [1, 1, 1],
+        [1, 1, 1],
+        [1, 1, 1]
+    ]
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            document.getElementById(`${i}${j}`).textContent = "____";
+        }
+    }
+}
+
+
+
+
 
 
