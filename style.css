@@ -14,7 +14,7 @@
 h3 {
     font-family: Arial;
     font-size:100px ;
-    color:white
+    color:black
 }
 h4 {
     font: size 1px;
@@ -22,7 +22,7 @@ h4 {
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
-    color:white
+    color:black
 }
 #Name1{
     color:black;
@@ -75,7 +75,7 @@ h2 {
     font-size: 30px;
 }
 body {
-    background-color: black;
+    background-color: cyan;
 }
 
 .player-box {
